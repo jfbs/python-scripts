@@ -20,12 +20,6 @@ def char2num(ref):
 		"w":9,"x":9,"y":9,"z":9
 		}
 
-# >>> char_numbers = [('abc',2), ('def',3), ('ghi',4), ('jkl',5), ('mno',6), ('pqrs',7), ('tuv',8), ('wxyz',9)]
-# >>> char_num_map = {c:v for k,v in char_numbers for c in k}
-# >>> phone = "JUST 1 NUMBER"
-# >>> result = "".join(str(char_num_map.get(v,v)) for v in phone.lower())
-# >>> result
-
 	for key, val in dict.items():
 		if ref in key:
 			return format(val)
